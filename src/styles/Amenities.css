@@ -1,0 +1,111 @@
+.amenities-page {
+  padding: 30px;
+  color: white;
+}
+
+.amenities-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.amenities-subtitle {
+  color: #94a3b8;
+  margin-bottom: 40px;
+}
+
+.amenities-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 25px;
+
+  margin-bottom: 50px;
+}
+
+.amenity-card {
+  background: #1e293b;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition: 0.3s;
+}
+
+.amenity-card:hover {
+  transform: translateY(-6px);
+}
+
+.amenity-card h2 {
+  margin-bottom: 15px;
+}
+
+.amenity-card p {
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.amenity-card button {
+  background: #2563eb;
+  color: white;
+  border: none;
+
+  padding: 12px 18px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.booking-title {
+  margin-bottom: 20px;
+}
+
+.booking-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 20px;
+}
+
+.booking-card {
+  background: #1e293b;
+
+  padding: 20px;
+
+  border-radius: 18px;
+
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.booking-card h3 {
+  color: #60a5fa;
+  margin-bottom: 10px;
+}
+
+.booking-card p {
+  color: #cbd5e1;
+}
+input,
+select {
+width: 100%;
+
+padding: 12px;
+
+margin-top: 10px;
+margin-bottom: 20px;
+
+border: none;
+
+border-radius: 10px;
+
+background: #334155;
+
+color: white;
+}

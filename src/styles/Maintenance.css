@@ -1,0 +1,188 @@
+body {
+  background: #0f172a;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 420px;
+  padding: 16px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: #334155;
+  color: white;
+
+  margin-right: 12px;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+button {
+  padding: 16px 24px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: #2563eb;
+  color: white;
+
+  font-weight: bold;
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.request-container {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 25px;
+
+  margin-top: 50px;
+}
+
+.card {
+  background: #1e293b;
+
+  border-radius: 22px;
+
+  padding: 25px;
+
+  color: white;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.25);
+
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.35);
+}
+
+.card h3 {
+  color: #60a5fa;
+
+  font-size: 1.4rem;
+
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #cbd5e1;
+
+  margin-bottom: 20px;
+
+  font-size: 15px;
+}
+
+.card button {
+  margin-right: 10px;
+}
+
+.card button:first-of-type {
+  background: #22c55e;
+}
+
+.card button:first-of-type:hover {
+  background: #16a34a;
+}
+
+.card button:last-of-type {
+  background: #ef4444;
+}
+
+.card button:last-of-type:hover {
+  background: #dc2626;
+}
+
+.maintenance-page {
+  padding: 30px;
+}
+
+.page-title {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.page-subtitle {
+  color: #94a3b8;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.add-request-box {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.stats-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.stat-box {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 16px;
+  min-width: 180px;
+  text-align: center;
+}
+
+.stat-box h2 {
+  color: #60a5fa;
+  margin-bottom: 8px;
+}
+
+.stat-box p {
+  color: #cbd5e1;
+}
+
+.status {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.pending {
+  background: rgba(234,179,8,0.2);
+  color: #facc15;
+}
+
+.completed {
+  background: rgba(34,197,94,0.2);
+  color: #22c55e;
+}
+
+.button-group {
+  margin-top: 20px;
+}
