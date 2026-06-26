@@ -1,3 +1,4 @@
+require("dotenv").config()
 const express = require("express")
 const cors = require("cors")
 const mongoose = require("mongoose")
@@ -8,10 +9,9 @@ const User = require("./models/user")
 
 const app = express()
 
-mongoose
-  .connect(
-    "mongodb+srv://pvnandu30:%40Nandu123@mongodb.ydewyzg.mongodb.net/?appName=mongodb"
-  )
+mongoose.connect(
+  process.env.MONGO_URI
+)
 .then(() => {
 console.log("MongoDB Connected")
 })
