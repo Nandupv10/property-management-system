@@ -1,94 +1,117 @@
-# 🏢 Real-Time Property Rental, Maintenance & Amenity Management Platform
+# 🏢 Property Rental, Maintenance & Amenity Management System
 
-A full-stack web application developed using **React**, **Node.js**, and **Express** to simplify property management by allowing tenants to submit maintenance requests and access property-related services through a centralized platform.
-
----
-
-## 📌 Project Overview
-
-This project provides a simple property management system where tenants can view dashboards, submit maintenance requests, explore amenities, and manage bookings. The application demonstrates communication between a React frontend and an Express backend using REST APIs.
+A full-stack web application built using **React**, **Vite**, **Node.js**, and **Express.js** that simulates a property management platform. The project enables tenants and property owners to manage maintenance requests, amenities, and bookings while demonstrating frontend-backend communication through REST APIs.
 
 ---
 
-## 🚀 Features
+## 📖 Project Overview
 
-- 🔐 Login Page
-- 🏠 Tenant Dashboard
+This project was developed to understand the fundamentals of full-stack web development. It includes a React frontend with multiple pages and an Express backend exposing REST APIs. The application demonstrates routing, component-based architecture, state management, API communication using Fetch API, and backend development using Express.
+
+---
+
+## ✨ Features
+
+- 🔐 Login Interface
+- 🏠 Home Page
+- 👤 Tenant Dashboard
 - 👨‍💼 Owner Dashboard
 - 🔧 Maintenance Request Module
 - 🏊 Amenities Page
 - 📅 Bookings Page
-- 🌐 React Router Navigation
-- ⚡ Express REST APIs
-- 🔄 Frontend ↔ Backend Communication using Fetch API
-- 🌍 CORS Enabled Backend
+- 🧭 Navigation using React Router
+- 🌐 REST APIs using Express.js
+- 🔄 Frontend ↔ Backend communication using Fetch API
+- 📦 JSON-based API responses
+- 🌍 Cross-Origin Resource Sharing (CORS) configuration
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
 ### Frontend
+
 - React
 - Vite
 - React Router
-- CSS
+- JavaScript (ES6+)
+- HTML5
+- CSS3
 
 ### Backend
+
 - Node.js
 - Express.js
 - CORS
 
-### Database
-- MongoDB *(Planned for future implementation)*
+### Development Tools
 
-### Future Improvements
-- MongoDB Integration
-- JWT Authentication
-- Persistent Data Storage
-- User Roles
-- Booking Management
-- Real-time Updates
+- Visual Studio Code
+- Git
+- GitHub
+- npm
 
 ---
 
 ## 📂 Project Structure
 
-```
-project/
+```text
+PROPERTY-MANAGEMENT/
 │
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── styles/
-│   │   ├── App.jsx
-│   │   └── main.jsx
+├── backend/
+│   ├── models/
+│   ├── server.js
+│   ├── package.json
+│   ├── package-lock.json
+│   └── .env
 │
-└── backend/
-    ├── server.js
-    ├── package.json
-    └── node_modules/
+├── public/
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   └── navbar.jsx
+│   │
+│   ├── pages/
+│   │   ├── home.jsx
+│   │   ├── login.jsx
+│   │   ├── TenantDashboard.jsx
+│   │   ├── OwnerDashboard.jsx
+│   │   ├── Maintenance.jsx
+│   │   ├── Amenities.jsx
+│   │   └── Bookings.jsx
+│   │
+│   ├── styles/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
 ```
 
 ---
 
-## 🔄 Application Flow
+## 🔄 Application Architecture
 
-```
-User
-   │
-   ▼
-React Frontend
-   │
-Fetch API
-   │
-Express Backend
-   │
-REST API
-   │
-JSON Response
-   │
-React UI
+```text
+                 User
+                   │
+                   ▼
+          React Frontend (Vite)
+                   │
+             Fetch API Request
+                   │
+                   ▼
+        Express.js REST API Server
+                   │
+             JSON Response
+                   │
+                   ▼
+             React Updates UI
 ```
 
 ---
@@ -97,69 +120,92 @@ React UI
 
 | Method | Endpoint | Description |
 |---------|----------|-------------|
-| GET | `/` | Backend Status |
-| GET | `/hello` | Test API |
-| GET | `/maintenance` | Returns maintenance requests |
+| GET | `/` | Backend status check |
+| GET | `/hello` | Test API endpoint |
+| GET | `/maintenance` | Returns maintenance request data |
 
 ---
 
-## 📸 Screenshots
-
-*(Add screenshots of your Login Page, Tenant Dashboard, Maintenance Page, and Owner Dashboard here.)*
-
----
-
-## ▶️ Installation
+## 🚀 Getting Started
 
 ### Clone Repository
 
 ```bash
-git clone <repository-link>
+git clone https://github.com/your-username/property-management.git
 ```
 
-### Frontend
+### Install Frontend Dependencies
 
 ```bash
-cd frontend
 npm install
+```
+
+### Start Frontend
+
+```bash
 npm run dev
 ```
 
-### Backend
+### Install Backend Dependencies
 
 ```bash
 cd backend
 npm install
+```
+
+### Start Backend
+
+```bash
 node server.js
 ```
 
 ---
 
-## 📖 Learning Outcomes
+## 📚 Concepts Implemented
 
 This project helped in understanding:
 
 - React Components
 - React Router
 - State Management using useState
+- Props
+- Conditional Rendering
 - REST APIs
 - Express.js
 - Backend Architecture
-- CORS
 - Fetch API
-- JSON Communication
-- Frontend and Backend Integration
+- JSON Responses
+- CORS
+- Frontend ↔ Backend Communication
+- Client-Server Architecture
 
 ---
 
-## 📌 Future Scope
+## 🔮 Future Enhancements
 
 - MongoDB Database Integration
-- User Authentication using JWT
+- JWT Authentication
+- User Registration
 - CRUD Operations
-- Role-Based Access
+- Persistent Data Storage
+- Role-Based Access Control
+- Improved Dashboard UI
+- Booking Management System
 - Real-Time Notifications
-- Improved UI/UX
+
+---
+
+## 📸 Screenshots
+
+Add screenshots of:
+
+- Login Page
+- Home Page
+- Tenant Dashboard
+- Owner Dashboard
+- Maintenance Page
+- Amenities Page
+- Bookings Page
 
 ---
 
@@ -170,3 +216,5 @@ This project helped in understanding:
 B.Tech Computer Science Engineering
 
 PES University
+
+GitHub: https://github.com/Nandupv10
