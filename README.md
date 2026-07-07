@@ -23,7 +23,6 @@ This project was developed to understand the fundamentals of full-stack web deve
 - 🌐 REST APIs using Express.js
 - 🔄 Frontend ↔ Backend communication using Fetch API
 - 📦 JSON-based API responses
-- 🌍 Cross-Origin Resource Sharing (CORS) configuration
 
 ---
 
